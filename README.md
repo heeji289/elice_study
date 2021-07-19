@@ -2,14 +2,12 @@
   <h1>🥕Elice Algorithm Study🥕</h1>
 </div>
 
----
-
 ## 스터디 방식
 
 - 월~목 아침 9시까지 해당 주차 주제와 관련된 문제 2개를 선정해서 디스코드에 공지
     - [tony9402님 문제집](https://github.com/tony9402/baekjoon)
-    - [프로그래머스 문제집] (https://programmers.co.kr/learn/challenges)
-    - [VSFe님 알고리즘 강의자료] (https://github.com/VSFe/Algorithm_Study/tree/main/Concept/New)
+    - [프로그래머스 문제집](https://programmers.co.kr/learn/challenges)
+    - [VSFe님 알고리즘 강의자료](https://github.com/VSFe/Algorithm_Study/tree/main/Concept/New)
 
 - 자신의 닉네임으로 된 폴더에 풀이를 Commit하고 Pull Request를 보낸다.
     - Commit 양식
@@ -32,7 +30,7 @@
     - 스터디원의 Pull Request를 보고 궁금한 점 혹은 개선할 점을 코멘트한다.
 - 다음날 점심까지 모든 스터디원이 Pull Request에 코멘트를 달고 토론이 끝나면 Merge!!
 
----
+
 
 ## 스터디 일지
 
