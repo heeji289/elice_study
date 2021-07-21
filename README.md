@@ -62,6 +62,8 @@
 | 7/19 |   2961    |             <a href="https://www.acmicpc.net/problem/2961" target="_blank">도영이가 만든 맛있는 음식</a>             | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg"/> |
 | 7/20 |   16943   |                   <a href="https://www.acmicpc.net/problem/16943" target="_blank">숫자 재배치</a>                    | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg"/> |
 | 7/20 |   2422    | <a href="https://www.acmicpc.net/problem/2422" target="_blank">한윤정이 이탈리아에 가서 아이스크림을 사먹는데...</a> | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/6.svg"/>  |
+| 7/21 |   1018   |                       <a href="https://www.acmicpc.net/problem/1018" target="_blank">체스판 다시 칠하기</a>                       | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/6.svg"/>  |
+| 7/21 |   19699    |             <a href="https://www.acmicpc.net/problem/19699" target="_blank">소-난다!</a>             | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg"/> |
 
 </details>
 
