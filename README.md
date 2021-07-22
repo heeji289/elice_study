@@ -52,7 +52,7 @@
 </details>
 
 <details markdown="1" open>
-<summary><strong>완전탐색 (2021.07.19 ~ 2021.07.)</strong></summary>
+<summary><strong>완전탐색 (2021.07.19 ~ 2021.07.22)</strong></summary>
 
 <br/>
 
