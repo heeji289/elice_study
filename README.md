@@ -51,7 +51,7 @@
 
 </details>
 
-<details markdown="1" open>
+<details markdown="1">
 <summary><strong>완전탐색 (2021.07.19 ~ 2021.07.22)</strong></summary>
 
 <br/>
@@ -70,8 +70,13 @@
 
 </details>
 
-<!-- ### 📖 오늘의 문제
+<details markdown="1" open>
+<summary><strong>그래프 탐색 (2021.07.26 ~ 2021.07.29)</strong></summary>
 
-|  작성일  | 출처 |                                                   문제                                                    | 카테고리 | 난이도 |                     제출 기록                     |
-| :------: | :--: | :-------------------------------------------------------------------------------------------------------: | :------: | :----: | :-----------------------------------------------: |
-| 21.07.15 | 백준 | [프린터 큐](https://www.acmicpc.net/problem/1966)<br>[문자열 집합](https://www.acmicpc.net/problem/14425) | 자료구조 |        | 임희지 🥕🥕<br>이정규 🥕🥕<br>전진성 🥕🥕<br>함시연 🥕🥕<br> | -->
+<br/>
+
+| 날짜 | 문제 번호 |                                                      문제 이름                                                       |                                          난이도                                           |
+| :--: | :-------: | :------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
+| 7/26 |   21938   |                       <a href="https://www.acmicpc.net/problem/21938" target="_blank">영상처리</a>                       | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg"/>  |
+| 7/26 |   17129    |             <a href="https://www.acmicpc.net/problem/17129" target="_blank">윌리암슨수액빨이딱따구리가 정보섬에 올라온 이유</a>             | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg"/> |
+</details>
