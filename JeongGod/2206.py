@@ -32,33 +32,32 @@ def check(nx, ny, wall):
                 return 2
     return 0
 
-result = 1e9
-while dq:
-    x, y, wall, ans = dq.popleft()
+def bfs():
+    while dq:
+        x, y, wall, ans = dq.popleft()
+        for idx in dir:
+            nx = x+idx[0]
+            ny = y+idx[1]
+            if nx == m-1 and ny == n-1:
+                ans += 1
+                return ans
+            way = check(nx, ny, wall)
 
-    for idx in dir:
-        nx = x+idx[0]
-        ny = y+idx[1]
-        if nx == m-1 and ny == n-1:
-            ans += 1
-            result = min(result, ans)
-        way = check(nx, ny, wall)
+            if way > 0:
+                # 벽을 부수지 않은 경우
+                if not wall:
+                    board[ny][nx] = '-1'
+                    wall_visited[ny][nx] = '-1'
+                # 벽을 이미 부쉈던 경우
+                else:
+                    wall_visited[ny][nx] = '-1'
 
-        if way > 0:
-            # 벽을 부수지 않은 경우
-            if not wall:
-                board[ny][nx] = '-1'
-                wall_visited[ny][nx] = '-1'
-            # 벽을 이미 부쉈던 경우
-            else:
-                wall_visited[ny][nx] = '-1'
-
-            # 벽이 아닐 경우에는
-            if way == 1:
-                dq.append((nx, ny, wall, ans+1))
-            # 벽을 부순 경우거나 이미 부쉈던 경우인데 가능하다면
-            elif way == 2:
-                dq.append((nx, ny, True, ans+1))
-
-print(result if result != 1e9 else -1)
+                # 벽이 아닐 경우에는
+                if way == 1:
+                    dq.append((nx, ny, wall, ans+1))
+                # 벽을 부순 경우거나 이미 부쉈던 경우인데 가능하다면
+                elif way == 2:
+                    dq.append((nx, ny, True, ans+1))
+result = bfs()
+print(result if result != None else -1)
 
