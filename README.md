@@ -70,8 +70,8 @@
 
 </details>
 
-<details markdown="1" open>
-<summary><strong>그래프 탐색 (2021.07.26 ~ 2021.07.29)</strong></summary>
+<details markdown="1">
+<summary><strong>DFS/BFS (2021.07.26 ~ 2021.07.29)</strong></summary>
 
 <br/>
 
@@ -83,4 +83,17 @@
 | 7/27 |18352 | <a href="https://www.acmicpc.net/problem/18352" target="_blank">특정 거리의 도시 찾기</a>  | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg"/> |
 | 7/28 |   43163   |  <a href="https://programmers.co.kr/learn/courses/30/lessons/43163" target="_blank">[DFS/BFS] 단어 변환 </a> | Lv3 |
 | 7/28 |43164 | <a href="https://programmers.co.kr/learn/courses/30/lessons/43164" target="_blank">[DFS/BFS] 여행경로</a>  | Lv3 |
+| 7/29 |   7569   |  <a href="https://www.acmicpc.net/problem/7569" target="_blank">토마토 </a> | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg"/> |
+| 7/29 |2206 | <a href="https://www.acmicpc.net/problem/2206" target="_blank">벽 부수고 이동하기</a>  | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg"/> |
+</details>
+
+<details markdown="1" open>
+<summary><strong>그래프 탐색 (2021.08.02 ~ 2021.08.05)</strong></summary>
+
+<br/>
+
+| 날짜 | 문제 번호 |                                                      문제 이름                                                       |                                          난이도                                           |
+| :--: | :-------: | :------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
+| 8/2 |   1446   |  <a href="https://www.acmicpc.net/problem/1446" target="_blank">지름길</a>      | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg"/>  |
+| 8/2 |   9205    |  <a href="https://www.acmicpc.net/problem/9205" target="_blank">맥주 마시면서 걸어가기</a>| <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg"/> |
 </details>
