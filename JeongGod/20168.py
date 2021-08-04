@@ -1,0 +1,35 @@
+'''
+N개의 정점, M개의 간선
+1 -> dest까지 가야한다.
+최대 weight제일 작은 순으로 간다.
+    만약 해당 경로의 weight의 합이 수치심보다 크다면
+    다음 weight를 본다.
+
+'''
+
+import sys
+input = sys.stdin.readline
+
+n, m, start, dest, money = map(int, input().split())
+graph = [[] for i in range(n+1)]
+for i in range(m):
+    v1, v2, m = map(int, input().split())
+    graph[v1].append((m, v2))
+    graph[v2].append((m, v1))
+
+result = []
+def dfs(cur, total, max_money, visited):
+    if cur == dest:
+        result.append((max_money, total))
+    for nm, nv in graph[cur]:
+        # print(cur)
+        if nv not in visited:
+            dfs(nv, total+nm, max(max_money, nm), visited | {nv})
+
+dfs(1, 0, 0, {start})
+result.sort()
+for max_m, total in result:
+    if total <= money:
+        print(max_m)
+        exit()
+print(-1)
