@@ -18,18 +18,16 @@ for i in range(m):
     graph[v2].append((m, v1))
 
 result = []
+ans = 1e9
 def dfs(cur, total, max_money, visited):
+    global ans
+    if total < 0:
+        return
     if cur == dest:
-        result.append((max_money, total))
+        ans = min(max_money, ans)
     for nm, nv in graph[cur]:
-        # print(cur)
         if nv not in visited:
-            dfs(nv, total+nm, max(max_money, nm), visited | {nv})
+            dfs(nv, total-nm, max(max_money, nm), visited | {nv})
 
-dfs(1, 0, 0, {start})
-result.sort()
-for max_m, total in result:
-    if total <= money:
-        print(max_m)
-        exit()
-print(-1)
+dfs(1, money, 0, {start})
+print(ans if ans != 1e9 else -1)
