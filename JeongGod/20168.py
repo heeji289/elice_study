@@ -29,5 +29,5 @@ def dfs(cur, total, max_money, visited):
         if nv not in visited:
             dfs(nv, total-nm, max(max_money, nm), visited | {nv})
 
-dfs(1, money, 0, {start})
+dfs(start, money, 0, {start})
 print(ans if ans != 1e9 else -1)
