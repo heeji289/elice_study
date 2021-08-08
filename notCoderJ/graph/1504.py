@@ -25,24 +25,24 @@ def dijkstra(s, d1, d2):
     dist = [INF] * (n + 1)
     dist[s] = 0
     hq  = [(0, s)]
-    # stop = [False, False]
+    stop = [False, False]
     
     while hq:
         d, v = heapq.heappop(hq)
         if d > dist[v]:
             continue
-        # if v == d1:           # 하 한참해멨네요... 이 로직을 제거하니 통과되네요; 혹시 왜 그런지 아시는 분 계신가요??
-        #     stop[0] = True    # 꺼낸 정점이 해당 도착 지점인 경우 각각 True로 만들어줘서 두 도착 지점이 나오면 끝내게 하려는 목적이었습니다...
-        # elif v == d2:
-        #     stop[1] = True
-        # if all(stop):
-        #     break
+        if v == d1:
+            stop[0] = True
+        elif v == d2:
+            stop[1] = True
+        if all(stop):
+            break
         
         for nv, w in graph[v]:
             next = d + w
             if next < dist[nv]:
                 dist[nv] = next
-                hq.append((next, nv))
+                heapq.heappush(hq, (next, nv)) # 정규님 도움으로 발견한 버그를 수정했습니다!!
 
     return (dist[d1], dist[d2])
         
