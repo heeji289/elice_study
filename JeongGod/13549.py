@@ -21,8 +21,10 @@ def calc(x):
 while dq:
     cur = dq.popleft()
     next = calc(cur)
+    if cur == dest:
+        break
     for elem, cost in next:
         if 0<= elem <= 100000 and visited[elem] == 1e9:
-            visited[elem] = min(visited[cur] + cost, visited[elem])
+            visited[elem] = visited[cur] + cost
             dq.append(elem)
 print(visited[dest])
