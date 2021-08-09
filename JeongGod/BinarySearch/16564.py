@@ -47,7 +47,7 @@ def total(lists, mid):
     for xi in lists:
         if xi >= mid:
             return tmp_k
-    tmp_k += (mid-xi)
+        tmp_k += (mid-xi)
     return tmp_k
 
 # N은 캐릭터의 개수, K는 현재 내가 올릴 수 있는 레벨
