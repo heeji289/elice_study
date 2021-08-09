@@ -42,13 +42,13 @@ print(characters[i])
 # 백준 pypy효율성 1등 풀이
 import sys
 
-def total(lists, K):
-    total = 0
+def total(lists, mid):
+    tmp_k = 0
     for xi in lists:
-        if xi >= K:
-            return total
-    total += (K-xi)
-    return total
+        if xi >= mid:
+            return tmp_k
+    tmp_k += (mid-xi)
+    return tmp_k
 
 # N은 캐릭터의 개수, K는 현재 내가 올릴 수 있는 레벨
 N, K = map(int, sys.stdin.readline().split())
