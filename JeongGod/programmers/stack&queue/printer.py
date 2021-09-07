@@ -3,7 +3,6 @@ from collections import deque
 
 def solution(priorities, location):
     answer = 0
-    priorities
     dq = deque(zip(range(len(priorities)), priorities))
     prior_list = sorted(priorities)
 
