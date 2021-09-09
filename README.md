@@ -8,6 +8,7 @@
 
   - [tony9402님 문제집](https://github.com/tony9402/baekjoon)
   - [프로그래머스 문제집](https://programmers.co.kr/learn/challenges)
+  - [프로그래머스 문제 모음집]()
   - [VSFe님 알고리즘 강의자료](https://github.com/VSFe/Algorithm_Study/tree/main/Concept/New)
 
 - 자신의 닉네임으로 된 폴더에 풀이를 Commit하고 Pull Request를 보낸다.
@@ -87,7 +88,7 @@
 | 7/29 |2206 | <a href="https://www.acmicpc.net/problem/2206" target="_blank">벽 부수고 이동하기</a>  | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg"/> |
 </details>
 
-<details markdown="1" open>
+<details markdown="1">
 <summary><strong>그래프 탐색 (2021.08.02 ~ 2021.08.05)</strong></summary>
 
 <br/>
@@ -96,4 +97,28 @@
 | :--: | :-------: | :------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
 | 8/2 |   1446   |  <a href="https://www.acmicpc.net/problem/1446" target="_blank">지름길</a>      | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg"/>  |
 | 8/2 |   9205    |  <a href="https://www.acmicpc.net/problem/9205" target="_blank">맥주 마시면서 걸어가기</a>| <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg"/> |
+| 8/3 |   1504   |  <a href="https://www.acmicpc.net/problem/1504" target="_blank">특정한 최단 경로</a>      | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg"/>  |
+| 8/3 |   1717    |  <a href="https://www.acmicpc.net/problem/1717" target="_blank">집합의 표현</a>| <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg"/> |
+| 8/4 |   9370   |  <a href="https://www.acmicpc.net/problem/9370" target="_blank">미확인 도착지</a>      | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/14.svg"/>  |
+| 8/4 |   20168    |  <a href="https://www.acmicpc.net/problem/20168" target="_blank">기능성</a>| <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg"/> |
+
+</details>
+
+<details markdown="1" open>
+<summary><strong>프로그래머스 고득점 KIT + 카카오 기출문제 (2021.09.06 ~ )</strong></summary>
+
+<br/>
+
+| 날짜 | 문제 분류 |                                                      문제 이름                                                       |                                          난이도                                           |
+| :--: | :-------: | :------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
+| 9/6 |   해시   |  <a href="https://programmers.co.kr/learn/courses/30/lessons/42578" target="_blank">위장</a>      | lv2  |
+| 9/6 |   해시    |  <a href="https://programmers.co.kr/learn/courses/30/lessons/42579" target="_blank">베스트앨범</a>| lv3 |
+| 9/7 |   스택/큐   |  <a href="https://programmers.co.kr/learn/courses/30/lessons/42587" target="_blank">프린터</a>      | lv2  |
+| 9/7 |   스택/큐    |  <a href="https://programmers.co.kr/learn/courses/30/lessons/42583" target="_blank">다리를 지나는 트럭</a>| lv2 |
+| 9/8 |   힙   |  <a href="https://programmers.co.kr/learn/courses/30/lessons/42627" target="_blank">디스크 컨트롤러</a>      | lv3  |
+| 9/8 |   힙   |  <a href="https://programmers.co.kr/learn/courses/30/lessons/42628" target="_blank">이중우선순위큐</a>| lv3 |
+| 9/9 |   정렬   |  <a href="https://programmers.co.kr/learn/courses/30/lessons/42746" target="_blank">가장 큰 수</a>      | lv2  |
+| 9/9 |   2021 Blind   |  <a href="https://programmers.co.kr/learn/courses/30/lessons/72411" target="_blank">메뉴 리뉴얼</a>| lv2 |
+
+
 </details>
