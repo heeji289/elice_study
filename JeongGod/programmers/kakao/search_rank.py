@@ -26,8 +26,7 @@ def solution(info, query):
     for k in info_list:
         info_list[k].sort(key=lambda x: int(x))
     
-    # score를 찾기 위한 이분탐색. 원래는 전에 효율성을 위해서 만들어둔거라 빼도 통과는 할거에요.
-    # 근데 버리기 아까워서 그냥 넣었습니다.
+    # score를 찾기 위한 이분탐색.
     def binary_s(_li, target):
         start, end = 0, len(_li)-1
         while start <= end:
