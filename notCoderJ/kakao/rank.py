@@ -21,15 +21,15 @@ def solution(info, query):
     # lang job career food
     #  000  00     00   00
     table = {
-        'cpp': 64,
+        'cpp': 256,
         'java': 128,
-        'python': 256,
-        'backend': 16,
-        'frontend': 32,
-        'junior': 4,
-        'senior': 8,
-        'chicken': 1,
-        'pizza': 2,
+        'python': 64,
+        'backend': 32,
+        'frontend': 16,
+        'junior': 8,
+        'senior': 4,
+        'chicken': 2,
+        'pizza': 1,
     }
     
     ap_cnt = [[] for _ in range(512)]
