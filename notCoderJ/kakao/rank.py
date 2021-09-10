@@ -43,7 +43,6 @@ def solution(info, query):
 
     for i, req in enumerate(require):
         q = sum(map(lambda x: table[x], req[:-1]))
-        qualified = []
         for j, v in ap_cnt:
             if j & q == q:
                 idx = bisect_left(v, int(req[-1]))
