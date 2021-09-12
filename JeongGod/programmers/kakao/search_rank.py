@@ -35,7 +35,8 @@ def solution(info, query):
                 end = mid - 1
             else:
                 start = mid + 1
-        return len(_li) - (end+1)
+        # 바로 길이를 구한다.
+        return len(_li) - start
 
     # query별로 돌아본다.
     ans = []
