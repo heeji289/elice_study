@@ -15,37 +15,77 @@
 '''
 
 from bisect import bisect_left
+from collections import defaultdict
 
 def solution(info, query):
-    answer = [0] * len(query)
-    # lang job career food
-    #  000  00     00   00
-    table = {
-        'cpp': 256,
-        'java': 128,
-        'python': 64,
-        'backend': 32,
-        'frontend': 16,
-        'junior': 8,
-        'senior': 4,
-        'chicken': 2,
-        'pizza': 1,
-    }
-    
-    ap_cnt = [[] for _ in range(512)]
-    ap_info = map(lambda x: x.split(), info)
-    
-    for i, ap_if in enumerate(ap_info):
-        ap_cnt[sum(map(lambda x: table[x], ap_if[:-1]))].append(int(ap_if[-1]))
-    
-    ap_cnt = [(i, sorted(v))  for i, v in enumerate(ap_cnt) if v]
-    require = map(lambda x: x.replace('and', '').replace('-', '').split(), query)
+  answer = [0] * len(query)
+  # 000 00 00 00
+  table = {
+      'cpp': 64,
+      'java': 128,
+      'python': 256,
+      'backend': 16,
+      'frontend': 32,
+      'junior': 4,
+      'senior': 8,
+      'chicken': 1,
+      'pizza': 2,
+      '-': 0,
+  }
+  
+  ap_cnt = defaultdict(list)
+  ap_info = sorted(map(lambda x: x.split(), info), key=lambda x: int(x[-1]))
+  
+  def comb(cnt, items):
+      if cnt == 0:
+          return {sum(items)}
+      next = cnt - 1
+      return comb(next, items) | comb(next, items[:next] + [0] + items[cnt:])
+  
+  for *rest, score in ap_info:
+      for case in comb(4, list(map(lambda x: table[x], rest))):
+          ap_cnt[case].append(int(score))
+  require = map(lambda x: x.replace('and', '').split(), query)
 
-    for i, req in enumerate(require):
-        q = sum(map(lambda x: table[x], req[:-1]))
-        for j, v in ap_cnt:
-            if j & q == q:
-                idx = bisect_left(v, int(req[-1]))
-                answer[i] += len(v[idx:])
-        
-    return answer
+  for i, req in enumerate(require):
+      q = sum(map(lambda x: table[x], req[:-1]))
+      idx = bisect_left(ap_cnt[q], int(req[-1]))
+      answer[i] = len(ap_cnt[q]) - idx
+
+  return answer
+
+  
+# 이전 코드
+# def solution(info, query):
+#   answer = [0] * len(query)
+#   # lang job career food
+#   #  000  00     00   00
+#   table = {
+#       'cpp': 256,
+#       'java': 128,
+#       'python': 64,
+#       'backend': 32,
+#       'frontend': 16,
+#       'junior': 8,
+#       'senior': 4,
+#       'chicken': 2,
+#       'pizza': 1,
+#   }
+  
+#   ap_cnt = [[] for _ in range(512)]
+#   ap_info = map(lambda x: x.split(), info)
+  
+#   for i, ap_if in enumerate(ap_info):
+#       ap_cnt[sum(map(lambda x: table[x], ap_if[:-1]))].append(int(ap_if[-1]))
+  
+#   ap_cnt = [(i, sorted(v))  for i, v in enumerate(ap_cnt) if v]
+#   require = map(lambda x: x.replace('and', '').replace('-', '').split(), query)
+
+#   for i, req in enumerate(require):
+#       q = sum(map(lambda x: table[x], req[:-1]))
+#       for j, v in ap_cnt:
+#           if j & q == q:
+#               idx = bisect_left(v, int(req[-1]))
+#               answer[i] += len(v[idx:])
+      
+#   return answer
