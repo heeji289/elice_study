@@ -34,10 +34,9 @@ def solution(msg):
             break
         answer.append(lzw_dict[w[:-1]])
 
-        # dict에 없는 문자열이면 새로 넣어준다.
-        if w not in lzw_dict:
-            rem_num += 1
-            lzw_dict[w] = rem_num
+        # dict에 없는 문자열이니 새로 넣어준다.
+        rem_num += 1
+        lzw_dict[w] = rem_num
         
         # msg에서 해당 문자열까지 제거한다.
         msg = msg[cur_idx:]
