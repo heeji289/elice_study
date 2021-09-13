@@ -9,7 +9,7 @@ import string
 def solution(msg):
     
     #1. initizlize table
-    table = defaultdict(list)
+    table = defaultdict(int)
     for idx, alphabet in enumerate(string.ascii_uppercase):
         table[alphabet] = idx+1
 
