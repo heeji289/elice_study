@@ -10,7 +10,7 @@ def solution(routes):
             아니라면 새로운 카메라를 설치한다.
     '''
     answer = 1
-    routes.sort(key=lambda x: (x[0], -x[1]))
+    routes.sort(key=lambda x: x[0])
     out = routes[0][1]
     for car in routes:
         new_in, new_out = car
