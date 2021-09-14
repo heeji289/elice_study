@@ -23,19 +23,14 @@ def solution(msg):
         w = msg[start:end]
         c = msg[start:end+1]
         if c not in table:
-            print(w)
             answer.append(table[w])
             num += 1
             table[c] = num
             start = end
-            if end == len(msg):
-                print(table[msg[end-1]])
-                answer.append(table[msg[end-1]])
-                break
+            continue
 
         elif c in table:
             if end == len(msg):
-                print(table[c])
                 answer.append(table[c])
                 break
 
