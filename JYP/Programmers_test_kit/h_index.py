@@ -1,10 +1,10 @@
 def solution(citations):
     citations.sort()
     
-    if min(citations) > len(citations):
+    if citations[0] > len(citations):
         return len(citations)
-    if max(citations) < len(citations):
-        return max(citations)
+    if citations[-1] < len(citations):
+        return citations[-1]
     
     for i in range(len(citations)-1, -1, -1):
         if citations[i] == len(citations[i:]):
