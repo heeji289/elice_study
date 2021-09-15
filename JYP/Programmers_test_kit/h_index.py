@@ -13,7 +13,3 @@ def solution(citations):
             for j in range(citations[i+1], citations[i]-1, -1):
                 if j == len(citations[i+1:]):
                     return j
-        else: #citations[i] > len(citations[i:]):
-             for j in range(citations[i], citations[i]-1, -1):
-                if j == len(citations[i:]):
-                    return j
