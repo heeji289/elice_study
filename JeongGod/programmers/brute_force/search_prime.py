@@ -21,14 +21,9 @@ def solution(numbers):
     for i in range(1, len(numbers)+1):
         for com in permutations(numbers, i):
             num = int(''.join(com))
-            # 둘 중 하나 사용하면 됩니다.
-            
-            # 1. 제곱근을 이용한 소수 판별
+            # 소수 판별
             if prime_check(num):
                 answer.add(num)
-            # 2. 에라토스테네스의 체를 이용한 소수 판별
-            # if prime[num]:
-            #     answer.add(num)
 
     return len(answer)
 
