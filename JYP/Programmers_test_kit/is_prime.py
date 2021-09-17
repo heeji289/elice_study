@@ -12,7 +12,7 @@ def solution(numbers):
         for s in tuple_to_list:
             num += s
         return int(num)
-    
+     
     # make permutations
     perm = []
     for i in range(1,len(nums)+1):
