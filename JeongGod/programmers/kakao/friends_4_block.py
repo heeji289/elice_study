@@ -20,7 +20,7 @@ def solution(m, n, board):
                     result += 1
         return result
 
-    def down_block(target):
+    def down_block():
         """
         1. 세로줄을 리스트로 만든다.
         2. 리스트에서 0의 개수를 세고, 0을 다 없앤다.
@@ -41,10 +41,9 @@ def solution(m, n, board):
 
     while True:
         # 추후에 내릴 때
-        target = sorted(check_block(), key=lambda x: x[1])
+        target = check_block()
         if len(target) == 0:
             break
         answer += break_block(target)
-        down_block(target)
-
+        down_block()
     return answer
