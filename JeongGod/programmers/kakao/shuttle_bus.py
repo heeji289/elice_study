@@ -2,8 +2,8 @@ def solution(n, t, m, timetable):
     """
     제일 늦은 도착 시각을 출력해야한다.
 
-    1. queue에 사람들을 시간순으로 담는다.
-    2. queue에 맨 앞에 있는 사람이 셔틀에 탈 수 있으면 태운다.
+    1. crews에 사람들을 시간순(내림차순)으로 담는다.
+    2. crews에 맨 뒤에 있는 사람이 셔틀에 탈 수 있으면 태운다.
     3. 콘이 탈 수 있는 셔틀의 시간을 업데이트한다.
         => 해당 시간 셔틀이 꽉 찼다면 마지막 탄 사람의 -1
         => 셔틀이 꽉 차지 않았다면 해당 셔틀 시간
@@ -16,7 +16,6 @@ def solution(n, t, m, timetable):
 
     start = 540  # 09:00 첫 셔틀 시간
     end = start + t*(n-1)  # 마지막 셔틀 시간
-    ans = 0
     # 셔틀시간대 별로 사람들을 태운다.
     for bus_time in range(start, end+1, t):
         bus_person = 0
@@ -26,11 +25,11 @@ def solution(n, t, m, timetable):
                 break
             bus_person += 1
             last_person = crews.pop()
-        # 탈 수 있는 셔틀의 시간을 업데이트 한다.
-        if bus_person == m:
-            ans = last_person - 1
-        else:
-            ans = bus_time
+    # 탈 수 있는 셔틀의 시간을 업데이트 한다.
+    if bus_person == m:
+        ans = last_person - 1
+    else:
+        ans = bus_time
 
     # 출력 형식에 맞게 변형
     hour, minute = divmod(ans, 60)
