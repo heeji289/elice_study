@@ -8,14 +8,14 @@ def solution(record):
     user = dict()
     answer = []
     for sen in record:
-        command, *rest = sen.split()
+        command, user_id, *nickname = sen.split()
         if command == "Enter":
-            user[rest[0]] = rest[1]
-            answer += [[rest[0], "님이 들어왔습니다."]]
+            user[user_id] = nickname[0]
+            answer += [[user_id, "님이 들어왔습니다."]]
         elif command == "Leave":
-            answer += [[rest[0], "님이 나갔습니다."]]
+            answer += [[user_id, "님이 나갔습니다."]]
         elif command == "Change":
-            user[rest[0]] = rest[1]
+            user[user_id] = nickname[0]
 
     for idx in range(len(answer)):
         nickname = user.get(answer[idx][0])
