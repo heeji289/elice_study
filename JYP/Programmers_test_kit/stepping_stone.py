@@ -11,7 +11,7 @@ def solution(distance, rocks, n):
     # if len(rocks) == n:
     #     return distance
 
-    # 1. 바위를 위치 순으로 정렬한다.
+    # 1. 바위를 위치 순으로 정렬한다. 
     rocks.sort()
 
     total_cnt = len(rocks)
