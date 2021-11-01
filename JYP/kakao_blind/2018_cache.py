@@ -20,7 +20,7 @@ def solution(cacheSize, cities):
                 cache.popleft() 
                 cache.rotate(idx) # 원래 데이터 순서대로 정렬한 뒤
                 cache.append(city) # 캐시의 최신 위치에 지금 읽은 값 추가
-                answer += 1
+                answer += 1 
 
         
         # Cache Miss
