@@ -6,6 +6,7 @@
 def solution(distance, rocks, n):
     answer = 0
     left, right = 0, distance
+    rocks.append(distance)
     rocks.sort()
     
     while left <= right:
@@ -15,6 +16,8 @@ def solution(distance, rocks, n):
         for rock in rocks:
             if rock - current < mid:
                 cnt += 1
+                if cnt > n:
+                    break
             else:
                 current = rock
         if cnt > n:

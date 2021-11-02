@@ -8,10 +8,9 @@ def solution(cacheSize, cities):
     answer = 0
     if not cacheSize:
         return len(cities) * 5
-    cities = [city.lower() for city in cities]
     lru = []
     
-    for city in cities:
+    for city in map(str.lower, cities):
         if city not in lru:
             if len(lru) < cacheSize:
                 lru.append(city)
